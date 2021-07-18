@@ -8,9 +8,18 @@
 import UIKit
 import CoreData
 
+/**
+    앱 전체의 생명 주기 관리를 위임받은 객체인 앱 델리게이트를 구현한 클래스
+    쉽게 말해 앱 전체에 적용해야 할 기능을 담당하는 클래스.
+    앱이 실행되고 종료될 때, 활성화 상태가 되거나 비활성화 상태가 될 때,
+     백그라운드 상태로 들어가는 등의 다양한 상태 변화를 감지하고 이에 대한 처리를 해 주어야할 때 이 클래스를 이용
+    - Basic p17
+ */
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+ 
+    var memolist = [MemoData]()// 메모 데이터를 저장할 배열 변수
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
