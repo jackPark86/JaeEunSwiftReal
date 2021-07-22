@@ -16,6 +16,8 @@
 		270B0D5326A7C81A00B045D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270B0D5126A7C81A00B045D9 /* LaunchScreen.storyboard */; };
 		270B0D5E26A7C81B00B045D9 /* InputFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B0D5D26A7C81B00B045D9 /* InputFormTests.swift */; };
 		270B0D6926A7C81B00B045D9 /* InputFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B0D6826A7C81B00B045D9 /* InputFormUITests.swift */; };
+		2762C04926A9178D00FB23DE /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2762C04826A9178D00FB23DE /* ReadViewController.swift */; };
+		2762C04E26A91DAB00FB23DE /* Spoqa Han Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2762C04D26A91CAB00FB23DE /* Spoqa Han Sans Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		270B0D6426A7C81B00B045D9 /* InputFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270B0D6826A7C81B00B045D9 /* InputFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFormUITests.swift; sourceTree = "<group>"; };
 		270B0D6A26A7C81B00B045D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2762C04826A9178D00FB23DE /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		2762C04D26A91CAB00FB23DE /* Spoqa Han Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,12 @@
 		270B0D4226A7C81800B045D9 /* InputForm */ = {
 			isa = PBXGroup;
 			children = (
+				2762C04D26A91CAB00FB23DE /* Spoqa Han Sans Bold.ttf */,
 				270B0D4326A7C81800B045D9 /* AppDelegate.swift */,
 				270B0D4526A7C81800B045D9 /* SceneDelegate.swift */,
 				270B0D4726A7C81800B045D9 /* ViewController.swift */,
 				270B0D4926A7C81800B045D9 /* Main.storyboard */,
+				2762C04826A9178D00FB23DE /* ReadViewController.swift */,
 				270B0D4F26A7C81A00B045D9 /* Assets.xcassets */,
 				270B0D5126A7C81A00B045D9 /* LaunchScreen.storyboard */,
 				270B0D5426A7C81A00B045D9 /* Info.plist */,
@@ -234,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2762C04E26A91DAB00FB23DE /* Spoqa Han Sans Bold.ttf in Resources */,
 				270B0D5326A7C81A00B045D9 /* LaunchScreen.storyboard in Resources */,
 				270B0D5026A7C81A00B045D9 /* Assets.xcassets in Resources */,
 				270B0D4B26A7C81800B045D9 /* Main.storyboard in Resources */,
@@ -265,6 +272,7 @@
 				270B0D4426A7C81800B045D9 /* AppDelegate.swift in Sources */,
 				270B0D4E26A7C81800B045D9 /* InputForm.xcdatamodeld in Sources */,
 				270B0D4626A7C81800B045D9 /* SceneDelegate.swift in Sources */,
+				2762C04926A9178D00FB23DE /* ReadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         self.paramEmail.frame = CGRect(x: 120, y: 100, width: 220, height: 30)
         self.paramEmail.font = UIFont.systemFont(ofSize: 13)
         self.paramEmail.borderStyle = .roundedRect
+        self.paramEmail.autocapitalizationType = .none //대문자 자동 변환 기능을 해제하는 구문
         
         self.view.addSubview(self.paramEmail)
         
@@ -99,6 +100,22 @@ class ViewController: UIViewController {
         //스위치와 스테퍼 컨트롤의 Value Changed 이벤트를 각각 액션 메소드에 연결한다.
         self.paramUpdate.addTarget(self, action: #selector(presentUpdateValue(_:)), for: .valueChanged)
         self.paramInterval.addTarget(self, action: #selector(presentIntervalValue(_:)), for: .valueChanged)
+        
+        
+        //전송 버튼을 내비게이션 아이템에 추가하고, submit 메소드에 연결한다.
+        let submitBtn = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(submit(_:)))
+        self.navigationItem.rightBarButtonItem = submitBtn
+        
+        //커스텀 폰트 사용하기
+        for family in UIFont.familyNames {
+            print("\(family)")
+        
+            for names in UIFont.fontNames(forFamilyName: family){
+                print("== \(names)")
+            }
+        }//end of for
+        
+        
     }//end of viewDidLoad()
     
     //스위치와 상호반응할 액션 메소드
@@ -110,6 +127,17 @@ class ViewController: UIViewController {
     @objc func presentIntervalValue(_ sender: UIStepper){
         self.txtInterval.text = ("\(Int(sender.value)) 분마다")
     }//end of presentIntervalValue
+    
+    //전송 버튼과 상호반응할 액션 메소드
+    @objc func submit(_ sender:Any){
+        let rvc = ReadViewController()
+        rvc.pEmail = self.paramEmail.text
+        rvc.pUpdate = self.paramUpdate.isOn
+        rvc.pInterval = self.paramInterval.value
+        
+        self.navigationController?.pushViewController(rvc, animated: true)
+    }//end of submit
+    
     
 }//end of class
 
