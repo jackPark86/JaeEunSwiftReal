@@ -14,6 +14,7 @@ import UIKit
  이를 위해 추가된 클래스가 SceneDelegate이다.
  이 클래스는 기존의 AppDelegate가 담당하던 앱의 상태 변화, 즉 앱이 실행되고 백그라운드로 들어갔다가 다시 포그라운드로 나오는 등의 변화를 대신 감지하고 그에 맞는 메소드를 호출하는 역할을 한다.
  루트 뷰 컨트롤러에 대한 참조도 기존 AppDelegate  클래스에서 제공한던 것이, 이제는 SceneDelegate 클래스에서 제공하도록 변경되었다.
+ - 꼼꼼한 재은씨 실전편 - p325
  */
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

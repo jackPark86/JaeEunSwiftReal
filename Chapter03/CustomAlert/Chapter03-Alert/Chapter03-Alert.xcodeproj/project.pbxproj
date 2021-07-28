@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2779982726B104C600116B96 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779982626B104C600116B96 /* MapKitViewController.swift */; };
+		2779982E26B105BE00116B96 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 2779982C26B105BE00116B96 /* note.png */; };
+		2779982F26B105BE00116B96 /* rating5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2779982D26B105BE00116B96 /* rating5@2x.png */; };
+		2779983426B105DE00116B96 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779983326B105DE00116B96 /* ImageViewController.swift */; };
+		2779983C26B10B5200116B96 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779983B26B10B5200116B96 /* ControlViewController.swift */; };
 		277BDFD026AFB6CB00DF2542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277BDFCF26AFB6CB00DF2542 /* AppDelegate.swift */; };
 		277BDFD226AFB6CB00DF2542 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277BDFD126AFB6CB00DF2542 /* SceneDelegate.swift */; };
 		277BDFD426AFB6CB00DF2542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277BDFD326AFB6CB00DF2542 /* ViewController.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2779982626B104C600116B96 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		2779982C26B105BE00116B96 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		2779982D26B105BE00116B96 /* rating5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating5@2x.png"; sourceTree = "<group>"; };
+		2779983326B105DE00116B96 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		2779983B26B10B5200116B96 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		277BDFCC26AFB6CB00DF2542 /* Chapter03-Alert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter03-Alert.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277BDFCF26AFB6CB00DF2542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277BDFD126AFB6CB00DF2542 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2779982B26B105A100116B96 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2779982C26B105BE00116B96 /* note.png */,
+				2779982D26B105BE00116B96 /* rating5@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		277BDFC326AFB6CB00DF2542 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +122,19 @@
 		277BDFCE26AFB6CB00DF2542 /* Chapter03-Alert */ = {
 			isa = PBXGroup;
 			children = (
+				2779982B26B105A100116B96 /* Resource */,
 				277BDFD826AFB6CB00DF2542 /* Chapter03_Alert.xcdatamodeld */,
 				277BDFCF26AFB6CB00DF2542 /* AppDelegate.swift */,
 				277BDFD126AFB6CB00DF2542 /* SceneDelegate.swift */,
 				277BDFD326AFB6CB00DF2542 /* ViewController.swift */,
 				277BE00826AFBAFB00DF2542 /* MapAlertViewController.swift */,
 				277BDFD526AFB6CB00DF2542 /* Main.storyboard */,
+				2779983326B105DE00116B96 /* ImageViewController.swift */,
+				2779983B26B10B5200116B96 /* ControlViewController.swift */,
 				277BDFDB26AFB6CD00DF2542 /* Assets.xcassets */,
 				277BDFDD26AFB6CD00DF2542 /* LaunchScreen.storyboard */,
 				277BDFE026AFB6CD00DF2542 /* Info.plist */,
+				2779982626B104C600116B96 /* MapKitViewController.swift */,
 			);
 			path = "Chapter03-Alert";
 			sourceTree = "<group>";
@@ -237,7 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2779982F26B105BE00116B96 /* rating5@2x.png in Resources */,
 				277BDFDF26AFB6CD00DF2542 /* LaunchScreen.storyboard in Resources */,
+				2779982E26B105BE00116B96 /* note.png in Resources */,
 				277BDFDC26AFB6CD00DF2542 /* Assets.xcassets in Resources */,
 				277BDFD726AFB6CB00DF2542 /* Main.storyboard in Resources */,
 			);
@@ -264,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2779982726B104C600116B96 /* MapKitViewController.swift in Sources */,
 				277BDFD426AFB6CB00DF2542 /* ViewController.swift in Sources */,
 				277BDFDA26AFB6CB00DF2542 /* Chapter03_Alert.xcdatamodeld in Sources */,
+				2779983426B105DE00116B96 /* ImageViewController.swift in Sources */,
 				277BDFD026AFB6CB00DF2542 /* AppDelegate.swift in Sources */,
 				277BE00926AFBAFB00DF2542 /* MapAlertViewController.swift in Sources */,
+				2779983C26B10B5200116B96 /* ControlViewController.swift in Sources */,
 				277BDFD226AFB6CB00DF2542 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
