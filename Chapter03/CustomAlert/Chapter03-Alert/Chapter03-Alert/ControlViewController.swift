@@ -25,4 +25,10 @@ class ControlViewController: UIViewController {
         self.preferredContentSize = CGSize(width: self.slider.frame.width, height: self.slider.frame.height+10)
     }//end of viewDidLoad
     
+    //슬라이더 객체의 값을 읽어올 연산 프로퍼티
+    var sliderValue: Float {
+        return self.slider.value
+    }//end of sliderValue
+
+    
 }//end of class

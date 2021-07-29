@@ -41,6 +41,15 @@ class MapAlertViewController: UIViewController {
         sliderBtn.addTarget(self, action: #selector(sliderAlert(_:)), for: .touchUpInside)
         
         self.view.addSubview(sliderBtn)
+        
+        //테이블 뷰 알림창 버튼 생성
+        let listBtn = UIButton(type: .system)
+        listBtn.frame = CGRect(x: 0, y: 300, width: 100, height: 30)
+        listBtn.center.x = self.view.frame.width / 2
+        listBtn.setTitle("List Alert", for: .normal)
+        listBtn.addTarget(self, action: #selector(listAlert(_:)), for: .touchUpInside)
+        
+        self.view.addSubview(listBtn)
     }//end of viewDidLoad
 
     //맵 알림창
@@ -82,7 +91,8 @@ class MapAlertViewController: UIViewController {
     
     //슬라이더 알림창
     @objc func sliderAlert(_ sender:Any){
-         //콘텐츠 뷰 영역에 들어갈 뷰 컨트롤러를 생성
+        
+         //콘텐츠 뷰 영역에 들어갈 뷰 컨트롤러를 생성 (생성 시점을 맨 처음 한 이유는 : okAction 변수에서 참조하기 위해)
         let contentVC = ControlViewController()
         
         //경고창 객체를 생성
@@ -92,10 +102,37 @@ class MapAlertViewController: UIViewController {
         alert.setValue(contentVC, forKeyPath: "contentViewController")
     
         //OK 버튼을 추가한다
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+            print(">>> sliderValue = \(contentVC.sliderValue)")
+        }
         alert.addAction(okAction)
         
         self.present(alert, animated: false)
         
     }//end of sliderAlert
+    
+    //테이블 뷰 알림창
+    @objc func listAlert(_ sender: Any){
+        //콘텐츠 뷰 영역에 들어갈 뷰 컨트롤러를 생성
+        let contentVC = ListViewController()
+        
+        //델리게이트 객체를 자신으로 지정한다.(델리게이트 메소드를 호출받는 대상은 자기 자신이므로, self를 대입하면 된다.)
+        contentVC.delegate = self
+        
+        //경고창 객체를 생성하고, OK 및 Cancel 버튼을 추가한다.
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        
+        //컨트롤 뷰 컨트롤러를 알림창에 등록한다.
+        alert.setValue(contentVC, forKeyPath: "contentViewController")
+    
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: false)
+    }//end of listAlert
+    
+    func didSelectRowAt(indexPath : IndexPath){
+        print(">>> 선택된 행은 \(indexPath.row)입니다")
+    }//end of didSelectRowAt
+    
 }//end of class
