@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27F7735526B4F77F00603D54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7735426B4F77F00603D54 /* AppDelegate.swift */; };
+		27F7735726B4F77F00603D54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7735626B4F77F00603D54 /* SceneDelegate.swift */; };
+		27F7735926B4F77F00603D54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7735826B4F77F00603D54 /* ViewController.swift */; };
+		27F7735C26B4F77F00603D54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F7735A26B4F77F00603D54 /* Main.storyboard */; };
+		27F7735F26B4F77F00603D54 /* CSStepper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27F7735D26B4F77F00603D54 /* CSStepper.xcdatamodeld */; };
+		27F7736126B4F78000603D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F7736026B4F78000603D54 /* Assets.xcassets */; };
+		27F7736426B4F78000603D54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F7736226B4F78000603D54 /* LaunchScreen.storyboard */; };
+		27F7736F26B4F78100603D54 /* CSStepperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7736E26B4F78100603D54 /* CSStepperTests.swift */; };
+		27F7737A26B4F78100603D54 /* CSStepperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7737926B4F78100603D54 /* CSStepperUITests.swift */; };
+		27F7738B26B4F7E200603D54 /* CSStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F7738A26B4F7E200603D54 /* CSStepper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27F7736B26B4F78100603D54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F7734926B4F77F00603D54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F7735026B4F77F00603D54;
+			remoteInfo = CSStepper;
+		};
+		27F7737626B4F78100603D54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F7734926B4F77F00603D54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F7735026B4F77F00603D54;
+			remoteInfo = CSStepper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27F7735126B4F77F00603D54 /* CSStepper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSStepper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F7735426B4F77F00603D54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27F7735626B4F77F00603D54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		27F7735826B4F77F00603D54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27F7735B26B4F77F00603D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27F7735E26B4F77F00603D54 /* CSStepper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CSStepper.xcdatamodel; sourceTree = "<group>"; };
+		27F7736026B4F78000603D54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F7736326B4F78000603D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27F7736526B4F78000603D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F7736A26B4F78100603D54 /* CSStepperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSStepperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F7736E26B4F78100603D54 /* CSStepperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStepperTests.swift; sourceTree = "<group>"; };
+		27F7737026B4F78100603D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F7737526B4F78100603D54 /* CSStepperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSStepperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F7737926B4F78100603D54 /* CSStepperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStepperUITests.swift; sourceTree = "<group>"; };
+		27F7737B26B4F78100603D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F7738A26B4F7E200603D54 /* CSStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSStepper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27F7734E26B4F77F00603D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F7736726B4F78100603D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F7737226B4F78100603D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27F7734826B4F77F00603D54 = {
+			isa = PBXGroup;
+			children = (
+				27F7735326B4F77F00603D54 /* CSStepper */,
+				27F7736D26B4F78100603D54 /* CSStepperTests */,
+				27F7737826B4F78100603D54 /* CSStepperUITests */,
+				27F7735226B4F77F00603D54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27F7735226B4F77F00603D54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F7735126B4F77F00603D54 /* CSStepper.app */,
+				27F7736A26B4F78100603D54 /* CSStepperTests.xctest */,
+				27F7737526B4F78100603D54 /* CSStepperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F7735326B4F77F00603D54 /* CSStepper */ = {
+			isa = PBXGroup;
+			children = (
+				27F7738A26B4F7E200603D54 /* CSStepper.swift */,
+				27F7735426B4F77F00603D54 /* AppDelegate.swift */,
+				27F7735626B4F77F00603D54 /* SceneDelegate.swift */,
+				27F7735826B4F77F00603D54 /* ViewController.swift */,
+				27F7735A26B4F77F00603D54 /* Main.storyboard */,
+				27F7736026B4F78000603D54 /* Assets.xcassets */,
+				27F7736226B4F78000603D54 /* LaunchScreen.storyboard */,
+				27F7736526B4F78000603D54 /* Info.plist */,
+				27F7735D26B4F77F00603D54 /* CSStepper.xcdatamodeld */,
+			);
+			path = CSStepper;
+			sourceTree = "<group>";
+		};
+		27F7736D26B4F78100603D54 /* CSStepperTests */ = {
+			isa = PBXGroup;
+			children = (
+				27F7736E26B4F78100603D54 /* CSStepperTests.swift */,
+				27F7737026B4F78100603D54 /* Info.plist */,
+			);
+			path = CSStepperTests;
+			sourceTree = "<group>";
+		};
+		27F7737826B4F78100603D54 /* CSStepperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27F7737926B4F78100603D54 /* CSStepperUITests.swift */,
+				27F7737B26B4F78100603D54 /* Info.plist */,
+			);
+			path = CSStepperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27F7735026B4F77F00603D54 /* CSStepper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F7737E26B4F78100603D54 /* Build configuration list for PBXNativeTarget "CSStepper" */;
+			buildPhases = (
+				27F7734D26B4F77F00603D54 /* Sources */,
+				27F7734E26B4F77F00603D54 /* Frameworks */,
+				27F7734F26B4F77F00603D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSStepper;
+			productName = CSStepper;
+			productReference = 27F7735126B4F77F00603D54 /* CSStepper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27F7736926B4F78100603D54 /* CSStepperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F7738126B4F78100603D54 /* Build configuration list for PBXNativeTarget "CSStepperTests" */;
+			buildPhases = (
+				27F7736626B4F78100603D54 /* Sources */,
+				27F7736726B4F78100603D54 /* Frameworks */,
+				27F7736826B4F78100603D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F7736C26B4F78100603D54 /* PBXTargetDependency */,
+			);
+			name = CSStepperTests;
+			productName = CSStepperTests;
+			productReference = 27F7736A26B4F78100603D54 /* CSStepperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27F7737426B4F78100603D54 /* CSStepperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F7738426B4F78100603D54 /* Build configuration list for PBXNativeTarget "CSStepperUITests" */;
+			buildPhases = (
+				27F7737126B4F78100603D54 /* Sources */,
+				27F7737226B4F78100603D54 /* Frameworks */,
+				27F7737326B4F78100603D54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F7737726B4F78100603D54 /* PBXTargetDependency */,
+			);
+			name = CSStepperUITests;
+			productName = CSStepperUITests;
+			productReference = 27F7737526B4F78100603D54 /* CSStepperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27F7734926B4F77F00603D54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					27F7735026B4F77F00603D54 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					27F7736926B4F78100603D54 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 27F7735026B4F77F00603D54;
+					};
+					27F7737426B4F78100603D54 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 27F7735026B4F77F00603D54;
+					};
+				};
+			};
+			buildConfigurationList = 27F7734C26B4F77F00603D54 /* Build configuration list for PBXProject "CSStepper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27F7734826B4F77F00603D54;
+			productRefGroup = 27F7735226B4F77F00603D54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F7735026B4F77F00603D54 /* CSStepper */,
+				27F7736926B4F78100603D54 /* CSStepperTests */,
+				27F7737426B4F78100603D54 /* CSStepperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27F7734F26B4F77F00603D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F7736426B4F78000603D54 /* LaunchScreen.storyboard in Resources */,
+				27F7736126B4F78000603D54 /* Assets.xcassets in Resources */,
+				27F7735C26B4F77F00603D54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F7736826B4F78100603D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F7737326B4F78100603D54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27F7734D26B4F77F00603D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F7735926B4F77F00603D54 /* ViewController.swift in Sources */,
+				27F7738B26B4F7E200603D54 /* CSStepper.swift in Sources */,
+				27F7735526B4F77F00603D54 /* AppDelegate.swift in Sources */,
+				27F7735726B4F77F00603D54 /* SceneDelegate.swift in Sources */,
+				27F7735F26B4F77F00603D54 /* CSStepper.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F7736626B4F78100603D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F7736F26B4F78100603D54 /* CSStepperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F7737126B4F78100603D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F7737A26B4F78100603D54 /* CSStepperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27F7736C26B4F78100603D54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F7735026B4F77F00603D54 /* CSStepper */;
+			targetProxy = 27F7736B26B4F78100603D54 /* PBXContainerItemProxy */;
+		};
+		27F7737726B4F78100603D54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F7735026B4F77F00603D54 /* CSStepper */;
+			targetProxy = 27F7737626B4F78100603D54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27F7735A26B4F77F00603D54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F7735B26B4F77F00603D54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27F7736226B4F78000603D54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27F7736326B4F78000603D54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27F7737C26B4F78100603D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27F7737D26B4F78100603D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27F7737F26B4F78100603D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CSStepper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpark.CSStepper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27F7738026B4F78100603D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CSStepper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpark.CSStepper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27F7738226B4F78100603D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CSStepperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpark.CSStepperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSStepper.app/CSStepper";
+			};
+			name = Debug;
+		};
+		27F7738326B4F78100603D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CSStepperTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpark.CSStepperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CSStepper.app/CSStepper";
+			};
+			name = Release;
+		};
+		27F7738526B4F78100603D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CSStepperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpark.CSStepperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CSStepper;
+			};
+			name = Debug;
+		};
+		27F7738626B4F78100603D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CSStepperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpark.CSStepperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CSStepper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27F7734C26B4F77F00603D54 /* Build configuration list for PBXProject "CSStepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F7737C26B4F78100603D54 /* Debug */,
+				27F7737D26B4F78100603D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F7737E26B4F78100603D54 /* Build configuration list for PBXNativeTarget "CSStepper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F7737F26B4F78100603D54 /* Debug */,
+				27F7738026B4F78100603D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F7738126B4F78100603D54 /* Build configuration list for PBXNativeTarget "CSStepperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F7738226B4F78100603D54 /* Debug */,
+				27F7738326B4F78100603D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F7738426B4F78100603D54 /* Build configuration list for PBXNativeTarget "CSStepperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F7738526B4F78100603D54 /* Debug */,
+				27F7738626B4F78100603D54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27F7735D26B4F77F00603D54 /* CSStepper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27F7735E26B4F77F00603D54 /* CSStepper.xcdatamodel */,
+			);
+			currentVersion = 27F7735E26B4F77F00603D54 /* CSStepper.xcdatamodel */;
+			path = CSStepper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 27F7734926B4F77F00603D54 /* Project object */;
+}
