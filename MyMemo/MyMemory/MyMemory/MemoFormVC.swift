@@ -25,15 +25,40 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     override func viewDidLoad() {
         super.viewDidLoad()
         self.contents.delegate = self
-    
+        
+        //커스텀 배경 이미지 설정 (p523 - chapter03)
+        // 공식적으로는 배경 이미지를 텍스트 뷰에 설정하는 방법이 없지만, UIColor 객체에 패턴화된 이미지를 배경 색상처럼 사용할 수 있는 방식으로 사용
+        let bgImage = UIImage(named: "memo-background.png")!
+        self.view.backgroundColor = UIColor(patternImage: bgImage)
+        
+        //텍스트 뷰의 기본 속성
+        self.contents.layer.borderWidth = 0
+        self.contents.layer.borderColor = UIColor.clear.cgColor
+        self.contents.backgroundColor = UIColor.clear //색상을 제거할 때 사용
+        
+        //줄 간격
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = 9
+        self.contents.attributedText = NSAttributedString(string: " ", attributes: [.paragraphStyle: style])
+        self.contents.text = ""
     }//end of viewDidLoad
     
     //저장 버튼을 클릭했을 때 호출되는 메소드
     @IBAction func save(_ sender: Any) {
-        //1. 내용을 입력하지 않았을 경우, 경고한다
+        //커스텀 경고창에 사용될 콘텐츠 뷰 컨트롤러 구성(p528 - chapter03)
+        let alertV = UIViewController()
+        let iconImage = UIImage(named: "warning-icon-60")
+        alertV.view = UIImageView(image: iconImage)
+        alertV.preferredContentSize = iconImage?.size ?? CGSize.zero
+        
+        //1. 내용을 입력하지 않았을 경우, 경고한다(chpater02)
         guard self.contents.text?.isEmpty == false else {
             let alert = UIAlertController(title: nil, message: "내용을 입력해주세요", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            //추가(p528 - chapter03) 콘텐츠 뷰 영역에 alertV를 등록한다
+            alert.setValue(alertV, forKey: "contentViewController")
+            
             self.present(alert, animated: true)
             return
         }//end of guard
@@ -88,6 +113,16 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     }//end of textViewDidChange
     
     
+    // touchesEnded() 메소드는 사용자가 뷰를 터치했을 때 호출되는 메소드
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //내비게이션 바의 토글 처리(p526 - chapter03)
+        let bar = self.navigationController?.navigationBar
+        
+        let ts = TimeInterval(0.3)
+        UIView.animate(withDuration: ts){ //애미메이션 구현용 메소드
+            bar?.alpha = (bar?.alpha == 0 ? 1 : 0)
+        }
+    }//end of touchesEnded
     
     
     
