@@ -19,7 +19,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <segue destination="J0J-8p-W3K" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="1K2-Qo-Ctw"/>
+                        <segue destination="J0J-8p-W3K" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="1K2-Qo-Ctw"/>
+                        <segue destination="JdR-Gp-HII" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="axb-8P-VML"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -54,8 +55,57 @@
             </objects>
             <point key="canvasLocation" x="867" y="119"/>
         </scene>
+        <!--Front View Controller-->
+        <scene sceneID="Rnv-lg-S3E">
+            <objects>
+                <viewController id="Dri-Ut-z1u" customClass="FrontViewController" customModule="Chapter04_SideBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8cJ-dK-u5w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Front page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjV-3V-33W">
+                                <rect key="frame" x="134" y="184" width="146" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7jZ-Tf-evR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DEV-yb-E3V">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="sidemenu.png" id="t5t-XV-0fd"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideBarButton" destination="t5t-XV-0fd" id="cwN-jA-zal"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjn-4G-8AW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686.9565217391305" y="795.53571428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ypd-4c-U2v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JdR-Gp-HII" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="knc-6w-l4J">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dri-Ut-z1u" kind="relationship" relationship="rootViewController" id="h1q-qK-8Nc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zfp-uh-9KI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="796"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="sidemenu.png" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
