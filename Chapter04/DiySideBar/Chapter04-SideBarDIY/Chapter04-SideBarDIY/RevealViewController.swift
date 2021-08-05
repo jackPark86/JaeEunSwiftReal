@@ -40,9 +40,12 @@ class RevealViewController: UIViewController {
             self.view.addSubview(vc.view) // _프론트 컨트롤러의 뷰를 메인 컨트롤러의 서브 뷰로 등록
             // _프론트 컨트롤러에 부모 뷰 컨트롤러가 바뀌었음을 알려준다.
             vc.didMove(toParent: self)
-        }
-        
-        
+            
+            //4) 프론트 컨트롤러의 델리게이트 변수(FrontViewController에 있는 변수)에 참조 정보를 넣어준다.
+            // viewControllers는 내비게이션 컨트롤러에 연결된 자식 컨트롤러들의 참조 정보가 저장되는 배열, 먼저 연결된 순서대로 저장되기 때문에, 루트 뷰 컨트롤러에 해당하는 프론트 컨트롤러는 배열의 0번 인텍스로 참조할 수 있다.
+            let frontVC = vc.viewControllers[0] as? FrontViewController
+            frontVC?.delegate = self
+        }//end of if
     }//end of setupView
     
     //사이드 바의 뷰를 읽어온다.
@@ -107,6 +110,7 @@ class RevealViewController: UIViewController {
         }, completion: {
             if $0 == true { //$0 애니메이션이 완료 되었으면 true 
                 self.isSideBarShowing = true //열림 상태로 플래그 변경
+                //인자값으로 입력받은 완료 함수를 실행한다.
                 complete?()
             }
         })
@@ -114,7 +118,25 @@ class RevealViewController: UIViewController {
     
     //사이드 바를 닫는다.
     func closeSideBar(_ complete: ( () -> Void)? ){
-        
+        //애니메이션 옵션을 정의한다.
+        let options = UIView.AnimationOptions([.curveEaseInOut, .beginFromCurrentState])
+        //애니메이션 실행
+        UIView.animate(withDuration: TimeInterval(self.SLIDE_TIME), delay: TimeInterval(0), options: options, animations: {
+            // 1) 옆으로 밀려난 콘텐츠 뷰의 위치를 제자리로
+            self.contentVC?.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        }, completion: {
+            if $0 == true {
+                //2) 사이드 바 뷰를 제거한다
+                self.sideVC?.view.removeFromSuperview()
+                self.sideVC = nil
+                //3) 닫힘 상태로 플래그를 변경한다
+                self.isSideBarShowing = false
+                //4) 그림자 효과를 제거한다
+                self.setShadowEffect(shadow: false, offset: 0)
+                //5) 인자값으로 입력받은 완료 함수를 실행한다.
+                complete?()
+            }
+        })
     }//end of closeSideBar
 
 }//end of class
