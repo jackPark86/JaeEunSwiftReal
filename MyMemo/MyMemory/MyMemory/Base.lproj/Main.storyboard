@@ -173,10 +173,10 @@
             </objects>
             <point key="canvasLocation" x="231.8840579710145" y="63.616071428571423"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Side BarVC-->
         <scene sceneID="VCw-WB-p4g">
             <objects>
-                <tableViewController id="YdC-AF-QGD" sceneMemberID="viewController">
+                <tableViewController id="YdC-AF-QGD" customClass="SideBarVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rtg-cI-Wzc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,10 +256,26 @@
             </objects>
             <point key="canvasLocation" x="231.8840579710145" y="754.6875"/>
         </scene>
+        <!--ProfileVC-->
+        <scene sceneID="D9j-bv-821">
+            <objects>
+                <viewController id="htv-Nf-OQh" customClass="ProfileVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mX9-sU-jpD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qyh-55-20V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rsX-kV-juk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIr-L6-KNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="800"/>
+        </scene>
         <!--메모 작성-->
         <scene sceneID="dGE-Or-Sd5">
             <objects>
-                <viewController id="hma-FI-li7" customClass="MemoFormVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoForm" id="hma-FI-li7" customClass="MemoFormVC" customModule="MyMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BQU-J9-64U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,6 +365,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEO-5q-meD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-496" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vDE-It-npA">
+            <objects>
+                <navigationController storyboardIdentifier="_Profile" automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" hidesBarsWhenKeyboardAppears="YES" hidesBarsWhenVerticallyCompact="YES" id="CXv-uw-zat" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fTB-QR-qdz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="htv-Nf-OQh" kind="relationship" relationship="rootViewController" id="Fxg-aI-Ag8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8F-eP-gVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="800"/>
         </scene>
     </scenes>
     <resources>
