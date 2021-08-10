@@ -4,10 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MyMemory.xcscheme_^#shared#^_</key>
+		<key>MyMemory copy.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MyMemory.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>272A1A5C269FE0A50039DB51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>272A1A75269FE0A60039DB51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>272A1A80269FE0A60039DB51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2791BCA026C218AE00E1830C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

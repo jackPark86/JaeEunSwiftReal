@@ -52,6 +52,12 @@ class FrontViewController: UIViewController {
         }//end of if else
     }//end of moveSide
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if self.delegate?.isSideBarShowing == true {
+            self.delegate?.closeSideBar(nil)
+        }
+    }//end of touchesBegan
+    
     
     
     

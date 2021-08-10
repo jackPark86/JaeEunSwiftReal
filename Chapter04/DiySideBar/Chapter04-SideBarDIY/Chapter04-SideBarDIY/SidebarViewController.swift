@@ -48,7 +48,7 @@ class SidebarViewController: UITableViewController {
         
         //3) 생성한 뷰 V를 테이블 헤더 뷰 영역에 등록한다.
         self.tableView.tableHeaderView = v
-        
+        self.tableView.tableFooterView = UIView() //테이블 뷰 아래 영역을 View 처리(separator 삭제 시킴)
     }//end of viewDidLoad
 
   

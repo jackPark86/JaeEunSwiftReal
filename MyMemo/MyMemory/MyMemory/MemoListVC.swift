@@ -41,6 +41,14 @@ class MemoListVC: UITableViewController {
             //제스처 객체를 뷰에 추가한다.
             self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
         }
+        
+        //Target Test
+        #if FREE
+            print("Free App")
+        #elseif PAID
+            print("PAID App")
+        #endif
+        
     }//end of viewDidLoad
 
 
@@ -94,5 +102,6 @@ class MemoListVC: UITableViewController {
         
     }//end of tableView
     
+  
     
 }//end of class
