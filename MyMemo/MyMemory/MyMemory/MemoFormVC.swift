@@ -41,6 +41,7 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         style.lineSpacing = 9
         self.contents.attributedText = NSAttributedString(string: " ", attributes: [.paragraphStyle: style])
         self.contents.text = ""
+        
     }//end of viewDidLoad
     
     //저장 버튼을 클릭했을 때 호출되는 메소드

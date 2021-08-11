@@ -58,30 +58,54 @@ class ListViewController: UITableViewController {
     
     //사용자가 테이블 뷰 셀을 선택했을 때 호출되는 메소드
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 { //첫 번째 셀이 클릭되었을 때에만
-            //입력이 가능한 알림창을 띄워 이름을 수정할 수 있도록 한다.
-            let alert = UIAlertController(title: nil, message: "이름을 입력하세요", preferredStyle: .alert)
-            
-            //입력 필드 추가
-            alert.addTextField(){
-                $0.text = self.name.text //name 레이블의 텍스트를 입력폼에 기본값으로 넣어준다.
-            }
-            //버튼 및 액션 추가
-            alert.addAction(UIAlertAction(title: "OK", style: .default) { (_) in
-                //사용자가 OK 버튼을 누르면 입력 필드에 입력된 값을 저장한다.
-                let value = alert.textFields?[0].text
-                
-                let plist = UserDefaults.standard //기본 저장소를 가져온다.
-                plist.setValue(value, forKey: "name") //"name"이라는 키로 값을 저장한다.
-                plist.synchronize() //동기화 처리
-                
-                self.name.text = value //수정된 값을 이름 레이블에도 적용한다. 
-            })
-            //알림창을 띄운다.
-            self.present(alert, animated: false, completion: nil)
-        }
+//        if indexPath.row == 0 { //첫 번째 셀이 클릭되었을 때에만
+//            //입력이 가능한 알림창을 띄워 이름을 수정할 수 있도록 한다.
+//            let alert = UIAlertController(title: nil, message: "이름을 입력하세요", preferredStyle: .alert)
+//
+//            //입력 필드 추가
+//            alert.addTextField(){
+//                $0.text = self.name.text //name 레이블의 텍스트를 입력폼에 기본값으로 넣어준다.
+//            }
+//            //버튼 및 액션 추가
+//            alert.addAction(UIAlertAction(title: "OK", style: .default) { (_) in
+//                //사용자가 OK 버튼을 누르면 입력 필드에 입력된 값을 저장한다.
+//                let value = alert.textFields?[0].text
+//
+//                let plist = UserDefaults.standard //기본 저장소를 가져온다.
+//                plist.setValue(value, forKey: "name") //"name"이라는 키로 값을 저장한다.
+//                plist.synchronize() //동기화 처리
+//
+//                self.name.text = value //수정된 값을 이름 레이블에도 적용한다.
+//            })
+//            //알림창을 띄운다.
+//            self.present(alert, animated: false, completion: nil)
+//        }
     
     }//end of tableView
     
+    //UITapGuesture 제스처를 통한 label 호출 메소드(p711)
+    //뷰는 기본적으로 사용자와 상호반응하지 않도록 설계되어 있다. UIControl 클래스를 상속받지 않은 일반 뷰 객체가 제스처를 사용하려면 시스템에 상호반응할 객체라는 것을 직접 알려주어야 한다.
+    @IBAction func edit(_ sender: Any) {
+        //입력이 가능한 알림창을 띄워 이름을 수정할 수 있도록 한다.
+        let alert = UIAlertController(title: nil, message: "이름을 입력하세요", preferredStyle: .alert)
+        
+        //입력 필드 추가
+        alert.addTextField(){
+            $0.text = self.name.text //name 레이블의 텍스트를 입력폼에 기본값으로 넣어준다.
+        }
+        //버튼 및 액션 추가
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { (_) in
+            //사용자가 OK 버튼을 누르면 입력 필드에 입력된 값을 저장한다.
+            let value = alert.textFields?[0].text
+            
+            let plist = UserDefaults.standard //기본 저장소를 가져온다.
+            plist.setValue(value, forKey: "name") //"name"이라는 키로 값을 저장한다.
+            plist.synchronize() //동기화 처리
+            
+            self.name.text = value //수정된 값을 이름 레이블에도 적용한다.
+        })
+        //알림창을 띄운다.
+        self.present(alert, animated: false, completion: nil)
+    }//end of edit
     
 }//end of class
