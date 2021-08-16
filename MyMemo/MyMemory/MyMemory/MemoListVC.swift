@@ -16,10 +16,22 @@ class MemoListVC: UITableViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     
-    //화면이 나타날 때마다 호출되는 메소드
+    //디바이스 스크린에 화면이 나타날 때마다 호출되는 메소드
     override func viewWillAppear(_ animated: Bool) {
+        //튜토리얼 화면 보여준적 없으면 화면에 표시하기
+        // viewDidLoad 메소드가 호출되는 시점에는 뷰가 메모리에만 로드된 상태이기 때문에, 화면 전환이 불가능하다.
+        //화면 전환이 가능하려면 최소한 viewWillAppear 메소드가 호출되는 시점이이어야 한다
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: UserInfoKey.tutorial) == false {
+            let vc = self.instanceTutorialVC(name: "MasterVC")
+            vc?.modalPresentationStyle = .fullScreen
+            self.present(vc!, animated: false)
+            return
+        }
+        
       //테이블 데이터를 다시 읽어들인다. 이에 따라 행을 구성하는 로직이 다시 실행될 것이다.
         self.tableView.reloadData()
+        
     }//end of viewWillAppear
     
     
