@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2776C8D626D2703200B42306 /* LogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776C8D526D2703200B42306 /* LogVC.swift */; };
 		277CC4C526CCB8E100914362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CC4C426CCB8E100914362 /* AppDelegate.swift */; };
 		277CC4C726CCB8E100914362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CC4C626CCB8E100914362 /* SceneDelegate.swift */; };
 		277CC4C926CCB8E100914362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CC4C826CCB8E100914362 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2776C8D526D2703200B42306 /* LogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogVC.swift; sourceTree = "<group>"; };
 		277CC4C126CCB8E100914362 /* Chapter07-CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter07-CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277CC4C426CCB8E100914362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277CC4C626CCB8E100914362 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				277CC4C626CCB8E100914362 /* SceneDelegate.swift */,
 				277CC4C826CCB8E100914362 /* ViewController.swift */,
 				277CC4CA26CCB8E100914362 /* Main.storyboard */,
+				2776C8D526D2703200B42306 /* LogVC.swift */,
 				277CC4FA26CCBAB000914362 /* ListVC.swift */,
 				277CC4D026CCB8E300914362 /* Assets.xcassets */,
 				277CC4D226CCB8E300914362 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277CC4C926CCB8E100914362 /* ViewController.swift in Sources */,
+				2776C8D626D2703200B42306 /* LogVC.swift in Sources */,
 				277CC4FB26CCBAB000914362 /* ListVC.swift in Sources */,
 				277CC4C526CCB8E100914362 /* AppDelegate.swift in Sources */,
 				277CC4C726CCB8E100914362 /* SceneDelegate.swift in Sources */,
